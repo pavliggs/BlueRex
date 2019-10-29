@@ -1,0 +1,74 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    min-width: 320px;
+    color: $main-text;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h3 {
+    font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+h4 {
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.btn {
+    color: $white;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.btn-pink.btn-shadow,
+.btn-violet.btn-shadow {
+    border-radius: 10px;
+    padding: 15px 23px 11px;
+    font-size: 15px;
+    transition: all 0.3s;
+
+    @media only screen and (max-width: 500px) {
+        padding: 10px 15px 6px; 
+    }
+}
+
+.btn-pink.btn-shadow {
+    box-shadow: 0 10px $light-pink;
+
+    &:hover {
+        box-shadow: 0 5px $light-pink;
+        color: $white;
+        background-color: darken($pink, 10%);
+    }
+}
+
+.btn-violet.btn-shadow {
+    box-shadow: 0 10px $light-violet;
+
+    &:hover {
+        box-shadow: 0 5px $light-violet;
+        color: $white;
+        background-color: darken($violet, 10%);
+    }
+}
+
+.btn-pink {
+    background-color: $pink;
+}
+
+.btn-violet {
+    background-color: $violet;
+}
+
+.text-spinner {
+    color: darken($violet, 20%);
+}

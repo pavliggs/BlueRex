@@ -1,0 +1,61 @@
+.achievements {
+    background-color: $violet;
+    color: $white;
+
+    &__item {
+        padding-top: 70px;
+        padding-bottom: 70px;
+        transition: all 0.5s;
+
+        &:hover {
+            background-color: #40286a;
+        }
+    }
+
+    &__icon i {
+        font-size: 50px;
+        transform: rotate(-45deg);
+    }
+
+    &__num {
+        font-weight: 600;
+        font-size: 50px;
+        line-height: 62px;
+    }
+
+    &__title {
+        font-size: 25px;
+        line-height: 27px;
+        height: 59px;
+        overflow: hidden;
+        max-width: 300px;
+        margin-left: auto;
+        margin-left: auto;
+        margin-right: auto;
+
+        span {
+            font-weight: 600;
+            font-size: 30px;
+            line-height: 32px;
+        }
+    }
+
+    &__text {
+        font-size: 15px;
+        line-height: 24px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+
+    .achievements {
+
+        &__item {
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+            padding-top: 30px;
+            padding-bottom: 20px;
+        }
+    }
+}

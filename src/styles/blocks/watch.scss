@@ -1,0 +1,72 @@
+.watch {
+    background: url('../img/watch-bg.jpg') center / cover no-repeat;
+    padding: 70px 0 30px;
+    min-height: 872px;
+
+    h3 {
+        font-size: 33px;
+        line-height: 35px;
+        color: $dark-gray;
+    }
+
+    h4 {
+        font-size: 50px;
+        line-height: 52px;
+        letter-spacing: -1.25px;
+        color: $dark-gray;
+    }
+
+    .nav-pills {
+
+        .nav-link {
+            font-size: 13px;
+            font-weight: 600;
+            line-height: 15px;
+            color: $dark-gray;
+            text-transform: uppercase;
+            padding: 15px 30px;
+        }
+    
+        .nav-link.active {
+            background-color: $pink;
+            color: $white;
+            box-shadow: 1.169px 3.825px 16px 0px rgba(1, 2, 2, 0.35);
+        }
+    }
+
+    .tab-pane p {
+        font-size: 14px;
+        line-height: 25px;
+        margin-bottom: 50px;
+    }
+}
+
+@media only screen and (max-width: 668px) {
+
+    .watch {
+
+        h3, h4 {
+            font-size: 30px;
+            line-height: 34px;
+        }
+    }
+}
+
+@media only screen and (max-width: 500px) {
+
+    .watch {
+
+        .nav-pills {
+
+            .nav-item {
+                width: 100%;
+            }
+    
+            .nav-link {
+                padding: 10px 15px;
+            }
+        }
+    }
+}
+
+  

@@ -1,0 +1,9 @@
+.logotypes {
+    background-color: $violet;
+    padding: 70px 0 50px;
+
+    &__item {
+        min-height: 100px;
+        line-height: 100px;
+    }
+}

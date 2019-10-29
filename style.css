@@ -1,0 +1,9 @@
+body {
+    background-color: red;
+}
+
+.img {
+    width: 249px;
+    height: 62px;
+    background: url(./img/svg/logo.svg) no-repeat;
+}

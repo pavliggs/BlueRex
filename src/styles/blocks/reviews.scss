@@ -1,0 +1,108 @@
+.reviews {
+    background: url('../img/reviews-bg.jpg') center / cover no-repeat;
+    // padding-top: 30px;
+    min-height: 590px;
+    position: relative;
+
+    .carousel {
+        height: 100%;
+        position: static;
+    }
+
+    .carousel-item {
+        transition: 1s;
+        padding-top: 30px;
+    }
+
+    .carousel-caption {
+        text-align: left;
+        bottom: auto;
+        top: 5%;
+        right: 5%;
+
+        h3 {
+            font-size: 40px;
+            line-height: 42px;
+        }
+
+        h4 {
+            font-size: 50px;
+            line-height: 52px;
+            margin-bottom: 60px;
+        }
+
+        .blockquote {
+            padding-left: 50px;
+
+            p {
+                font-size: 22px;
+                line-height: 24px;
+                font-weight: 300;
+                font-style: italic;
+                position: relative;
+
+                &::before {
+                    content: "\201C";
+                    display: block;
+                    font-size: 120px;
+                    font-weight: 600;
+                    font-style: italic;
+                    color: $pink;
+                    position: absolute;
+                    top: 10px;
+                    left: -70px;
+                }
+            }
+
+            &-footer {
+                font-size: 25px;
+                font-weight: 300;
+                line-height: 27px;
+                color: $white;
+            }
+        }
+
+        .stars__block {
+            display: flex;
+            margin-bottom: 15px;
+        }
+
+        .stars__item {
+            color: $pink;
+            font-size: 20px;
+        }
+    }
+
+    .carousel-control-prev-icon {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23f42267' viewBox='0 0 8 8'%3e%3cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3e%3c/svg%3e");
+    }
+
+    .carousel-control-next-icon {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23f42267' viewBox='0 0 8 8'%3e%3cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3e%3c/svg%3e");
+    }
+}
+
+@media only screen and (max-width: 991px) {
+
+    .reviews {
+        // padding-bottom: 30px;
+
+        .carousel-caption {
+            position: static;
+        }
+    }
+}
+
+@media only screen and (max-width: 668px) {
+
+    .reviews {
+
+        .carousel-caption {
+
+            h3, h4 {
+                font-size: 30px;
+                line-height: 34px;
+            }
+        }
+    }
+}

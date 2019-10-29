@@ -1,0 +1,47 @@
+.footer {
+    background: url('../img/watch-bg.jpg') center / cover no-repeat;
+    padding: 100px 0 50px;
+
+    &__title {
+        font-family: 'Poppins', sans-serif;
+        font-size: 25px;
+        font-weight: 700;
+        line-height: 27px;
+        color: $violet;
+        margin-bottom: 20px;
+    }
+
+    &__list {
+        padding-left: 10px;
+    }
+
+    &__list {
+        padding-left: 10px;
+
+        li {
+            list-style-type: none;
+
+            a {
+                font-family: 'Poppins', sans-serif;
+                font-size: 15px;
+                font-weight: 600;
+                line-height: 24px;
+                color: $footer-list;
+                text-decoration: none;
+                border-bottom: 1px solid transparent;
+                transition: all 0.3s;
+
+                &:hover {
+                    border-bottom-color: $footer-list;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+
+    .footer {
+        padding-top: 60px;
+    }
+}

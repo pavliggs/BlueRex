@@ -1,0 +1,46 @@
+.form {
+    background: url('../img/form-bg.jpg') center / cover no-repeat;
+    padding: 70px 0;
+    color: $white;
+
+    h4 {
+        margin-bottom: 5px;
+        font-size: 50px;
+        line-height: 52px;
+    }
+
+    h5 {
+        font-size: 30px;
+        font-weight: 600;
+        line-height: 48px;
+    }
+
+    p {
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    form {
+        margin-top: 50px;
+
+        .form-control {
+            height: 60px;
+            background-color: rgba(255, 255, 255, 0.35);
+            border: none;
+            color: $white;
+            padding-left: 40px;
+            padding-right: 40px;
+            margin-bottom: 20px;
+
+            &::placeholder {
+                color: $white;
+                font-size: 15px;
+            }
+
+            &:focus {
+                box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.25);
+            }
+        }
+    }
+}
+  

@@ -1,0 +1,52 @@
+.copyright {
+    background-color: $copyright-bg;
+    padding: 50px 0;
+    font-family: 'Poppins', sans-serif;
+
+    .nav {
+        justify-content: center;
+    }
+
+    span.nav-link,
+    a.nav-link {
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 20px;
+        position: relative;
+    }
+
+    span.nav-link {
+        color: $footer-list;
+    }
+
+    a.nav-link {
+        color: $violet;
+    }
+
+    span.nav-link::after,
+    a.nav-link::after {
+        content: '\2219';
+        position: absolute;
+        right: -3px;
+    }
+
+    .nav-item:last-child a.nav-link::after {
+        content: '';
+    }
+}
+
+@media only screen and (max-width: 400px) {
+
+    .copyright {
+
+        .nav {
+            display: block;
+            text-align: center;
+        }
+
+        span.nav-link::after,
+        a.nav-link::after {
+            content: '';
+        }
+    }
+}
